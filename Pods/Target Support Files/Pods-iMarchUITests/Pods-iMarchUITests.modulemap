@@ -1,0 +1,6 @@
+framework module Pods_iMarchUITests {
+  umbrella header "Pods-iMarchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
