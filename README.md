@@ -2,7 +2,12 @@
 imarch app for political movements
 
 
-In order to make this app work so it pulls from an Amazon s3 bucket you will need to set up a 
+In order to make this app work and pull updated Realm databases from an Amazon s3 bucket you will need to set up a AWS Cognito Credentials Provider. Please see the Amazon documentation here:
+
+http://docs.aws.amazon.com/cognito/latest/developerguide/getting-credentials.html
+
+
+Once you have set up your S3 bucket you can replace the identityPoolId from the code snippet below with your S3 identity pool id.
 
     fileprivate func loadRealmDatabase() {
         //        createLocalNotificationsForMarches()
@@ -13,6 +18,3 @@ In order to make this app work so it pulls from an Amazon s3 bucket you will nee
         ...  
         ...
         
-  Please see the Amazon documentation here:
-  
-  http://docs.aws.amazon.com/cognito/latest/developerguide/getting-credentials.html
